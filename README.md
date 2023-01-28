@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://iamvishal345.github.io/windbnb-web/">
+    <a href="https://iamvishal345.github.io/todo-solid/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/iamvishal345/windbnb-web/">
+    <a href="https://github.com/iamvishal345/todo-solid/">
       Solution
     </a>
     <span> | </span>
@@ -53,7 +53,7 @@ and [yarn](https://yarnpkg.com/) installed on your computer. From your command l
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/iamvishal345/windbnb-web.git
+$ git clone https://github.com/iamvishal345/todo-solid.git
 
 # Install dependencies
 $ yarn
