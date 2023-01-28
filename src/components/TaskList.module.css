@@ -1,0 +1,85 @@
+.tasksEmpty {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.tasksList {
+  margin: 16px 48px 0;
+  list-style: none;
+  box-shadow: 1px 2px 3px -1px #303642;
+  background: #303642;
+  border-radius: 8px;
+}
+
+.taskItem {
+  padding: 16px;
+  border-bottom: 2px solid #4f535c;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+  transition: background 300ms ease-in-out;
+}
+
+.taskItem:hover {
+  background: #444d5f;
+}
+
+.taskItem:last-child {
+  border: none;
+}
+
+.taskCheckbox {
+  height: 16px;
+  width: 16px;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.complete {
+  background: #32c488;
+  box-shadow: inset 0px 0px 0px 3px #303642;
+}
+
+.completeText {
+  text-decoration: line-through;
+}
+
+.actionButton {
+  margin-left: auto;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+.actionButton:hover {
+  color: #32c488;
+}
+
+.taskActionIcon {
+  font-size: 18px;
+}
+
+.input {
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  background: #282c34;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.input:hover {
+  border: 1px solid white;
+}
+
+@media only screen and (max-width: 500px) {
+  .tasksList {
+    margin: 16px;
+  }
+}

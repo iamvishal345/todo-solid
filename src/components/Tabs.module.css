@@ -1,0 +1,33 @@
+.tabList {
+  display: flex;
+  padding: 8px;
+  width: max(60vw, 700px);
+  justify-content: center;
+  padding-bottom: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.tab {
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tabActive {
+  color: #32c488;
+  border-bottom: 4px solid;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 699px) {
+  .tabContainer,
+  .tabList {
+    width: 100%;
+  }
+}

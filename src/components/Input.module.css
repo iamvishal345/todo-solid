@@ -1,0 +1,70 @@
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  margin: 16px 48px 0;
+}
+
+.inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background: #282c34;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.input:hover {
+  border: 1px solid white;
+}
+
+.inputLabel {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  transition: all 400ms ease-in-out;
+}
+
+.input:focus + .inputLabel,
+.input:focus-within + .inputLabel,
+.input:active + .inputLabel,
+.input.active + .inputLabel {
+  left: 13px;
+  background: #282c34;
+  top: -9px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0 2px;
+  font-size: 12px;
+}
+
+.addButton {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #077c4b;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: background 400ms ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.addButton:hover {
+  background-color: #2aaa75;
+}
+
+@media only screen and (max-width: 500px) {
+  .inputContainer {
+    margin: 16px;
+  }
+}
